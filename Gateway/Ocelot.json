@@ -3,7 +3,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/author/getBooksByEmailId",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "authorService",
       "UpstreamPathTemplate": "/api/gateway/author/getBooksByEmailId",
       "UpstreamHttpMethod": [ "Get" ]
@@ -11,7 +11,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/author/getAllBooks",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "authorService",
       "UpstreamPathTemplate": "/api/gateway/author/getAllBooks",
       "UpstreamHttpMethod": [ "Get" ]
@@ -19,7 +19,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/author/createBooks",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "authorService",
       "UpstreamPathTemplate": "/api/gateway/author/createBooks",
       "UpstreamHttpMethod": [ "Post" ]
@@ -27,7 +27,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/author/updateBookDetails",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "authorService",
       "UpstreamPathTemplate": "/api/gateway/author/updateBookDetails",
       "UpstreamHttpMethod": [ "Put" ]
@@ -35,7 +35,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/author/deleteBookDetails",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "authorService",
       "UpstreamPathTemplate": "/api/gateway/author/deleteBookDetails",
       "UpstreamHttpMethod": [ "Delete" ]
@@ -43,7 +43,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/author/blockBook",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "authorService",
       "UpstreamPathTemplate": "/api/gateway/author/blockBook",
       "UpstreamHttpMethod": [ "Put" ]
@@ -51,7 +51,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/author/unblockBook",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "authorService",
       "UpstreamPathTemplate": "/api/gateway/author/unblockBook",
       "UpstreamHttpMethod": [ "Put" ]
@@ -59,7 +59,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/login/login-user",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "authorService",
       "UpstreamPathTemplate": "/api/gateway/login/login-user",
       "UpstreamHttpMethod": [ "Post" ]
@@ -67,7 +67,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/login/register-user",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "authorService",
       "UpstreamPathTemplate": "/api/gateway/login/register-user",
       "UpstreamHttpMethod": [ "Post" ]
@@ -75,7 +75,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/reader/searchBook",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/reader/searchBook",
       "UpstreamHttpMethod": [ "Get" ]
@@ -83,7 +83,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/readerlogin/reader-login",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/readerlogin/reader-login",
       "UpstreamHttpMethod": [ "Post" ]
@@ -91,7 +91,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/readerlogin/reader-register",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/readerlogin/reader-register",
       "UpstreamHttpMethod": [ "Post" ]
@@ -99,7 +99,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/order/postOrder",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/order/postOrder",
       "UpstreamHttpMethod": [ "Post" ]
@@ -107,7 +107,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/order/getOrderDetails",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/order/getOrderDetails",
       "UpstreamHttpMethod": [ "Get" ]
@@ -115,7 +115,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/order/cancelOrder",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/order/cancelOrder",
       "UpstreamHttpMethod": [ "Put" ]
@@ -123,7 +123,7 @@
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/order/getOrderDetailsByPaymentId",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/order/getOrderDetailsByPaymentId",
       "UpstreamHttpMethod": [ "Get" ]
