@@ -2,10 +2,10 @@
   "Routes": [
     {
       "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/api/author/getBooksByAuthorId",
+      "DownstreamPathTemplate": "/api/author/getBooksByEmailId",
       "DownstreamScheme": "https",
       "ServiceName": "authorService",
-      "UpstreamPathTemplate": "/api/gateway/author/getBooksByAuthorId",
+      "UpstreamPathTemplate": "/api/gateway/author/getBooksByEmailId",
       "UpstreamHttpMethod": [ "Get" ]
     },
     {
@@ -85,7 +85,7 @@
       "DownstreamPathTemplate": "/api/readerlogin/reader-login",
       "DownstreamScheme": "https",
       "ServiceName": "readerService",
-      "UpstreamPathTemplate": "/api/gateway/login/reader-login",
+      "UpstreamPathTemplate": "/api/gateway/readerlogin/reader-login",
       "UpstreamHttpMethod": [ "Post" ]
     },
     {
@@ -93,14 +93,14 @@
       "DownstreamPathTemplate": "/api/readerlogin/reader-register",
       "DownstreamScheme": "https",
       "ServiceName": "readerService",
-      "UpstreamPathTemplate": "/api/gateway/login/reader-register",
+      "UpstreamPathTemplate": "/api/gateway/readerlogin/reader-register",
       "UpstreamHttpMethod": [ "Post" ]
     },
     {
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/order/postOrder",
       "DownstreamScheme": "https",
-      "ServiceName": "orderService",
+      "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/order/postOrder",
       "UpstreamHttpMethod": [ "Post" ]
     },
@@ -108,7 +108,7 @@
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/order/getOrderDetails",
       "DownstreamScheme": "https",
-      "ServiceName": "orderService",
+      "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/order/getOrderDetails",
       "UpstreamHttpMethod": [ "Get" ]
     },
@@ -116,7 +116,7 @@
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/order/cancelOrder",
       "DownstreamScheme": "https",
-      "ServiceName": "orderService",
+      "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/order/cancelOrder",
       "UpstreamHttpMethod": [ "Put" ]
     },
@@ -124,7 +124,7 @@
       "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/order/getOrderDetailsByPaymentId",
       "DownstreamScheme": "https",
-      "ServiceName": "orderService",
+      "ServiceName": "readerService",
       "UpstreamPathTemplate": "/api/gateway/order/getOrderDetailsByPaymentId",
       "UpstreamHttpMethod": [ "Get" ]
     }
