@@ -18,42 +18,42 @@
     },
     {
       "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/api/author",
+      "DownstreamPathTemplate": "/api/author/createBooks",
       "DownstreamScheme": "https",
       "ServiceName": "authorService",
-      "UpstreamPathTemplate": "/api/gateway/author/PostCreateBookDetails",
+      "UpstreamPathTemplate": "/api/gateway/author/createBooks",
       "UpstreamHttpMethod": [ "Post" ]
     },
     {
       "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/api/author",
+      "DownstreamPathTemplate": "/api/author/updateBookDetails",
       "DownstreamScheme": "https",
       "ServiceName": "authorService",
-      "UpstreamPathTemplate": "/api/gateway/author/UpdateCreateBookDetails",
+      "UpstreamPathTemplate": "/api/gateway/author/updateBookDetails",
       "UpstreamHttpMethod": [ "Put" ]
     },
     {
       "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/api/author",
+      "DownstreamPathTemplate": "/api/author/deleteBookDetails",
       "DownstreamScheme": "https",
       "ServiceName": "authorService",
-      "UpstreamPathTemplate": "/api/gateway/author/DeleteCreateBookDetails",
+      "UpstreamPathTemplate": "/api/gateway/author/deleteBookDetails",
       "UpstreamHttpMethod": [ "Delete" ]
     },
     {
       "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/api/author/BlockBook",
+      "DownstreamPathTemplate": "/api/author/blockBook",
       "DownstreamScheme": "https",
       "ServiceName": "authorService",
-      "UpstreamPathTemplate": "/api/gateway/author/BlockBook",
+      "UpstreamPathTemplate": "/api/gateway/author/blockBook",
       "UpstreamHttpMethod": [ "Put" ]
     },
     {
       "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/api/author/UnblockBook",
+      "DownstreamPathTemplate": "/api/author/unblockBook",
       "DownstreamScheme": "https",
       "ServiceName": "authorService",
-      "UpstreamPathTemplate": "/api/gateway/author/UnblockBook",
+      "UpstreamPathTemplate": "/api/gateway/author/unblockBook",
       "UpstreamHttpMethod": [ "Put" ]
     },
     {
@@ -74,10 +74,10 @@
     },
     {
       "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/api/reader",
+      "DownstreamPathTemplate": "/api/reader/searchBook",
       "DownstreamScheme": "https",
       "ServiceName": "readerService",
-      "UpstreamPathTemplate": "/api/gateway/reader/SearchBooks",
+      "UpstreamPathTemplate": "/api/gateway/reader/searchBook",
       "UpstreamHttpMethod": [ "Get" ]
     },
     {
